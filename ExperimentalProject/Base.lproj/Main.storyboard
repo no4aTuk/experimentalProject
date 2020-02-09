@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7E2-dP-rLe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExperimentalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ona-Ns-emI">
+                                <rect key="frame" x="147" y="418" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GU2-sV-oEr"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZAS-OV-bCw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Move next">
+                                    <color key="titleColor" red="0.81800518134715028" green="0.10925906798117348" blue="0.48544540504459882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0vM-a5-3cT" kind="show" id="RQ8-4X-Dbp"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons_pack" translatesAutoresizingMaskIntoConstraints="NO" id="sTF-iV-9c7">
+                                <rect key="frame" x="157" y="254" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="FT7-Up-QUv"/>
+                                    <constraint firstAttribute="width" constant="100" id="VbD-Mk-vGH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label just for testing font replacements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z3-Vb-UEf">
+                                <rect key="frame" x="16" y="771.5" width="382" height="26.5"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="22"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Z3-Vb-UEf" secondAttribute="trailing" constant="16" id="Bb1-AC-rEm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Z3-Vb-UEf" secondAttribute="bottom" constant="64" id="Eug-I7-bgJ"/>
+                            <constraint firstItem="sTF-iV-9c7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gaU-Ds-6yk"/>
+                            <constraint firstItem="Ona-Ns-emI" firstAttribute="top" secondItem="sTF-iV-9c7" secondAttribute="bottom" constant="64" id="p43-0U-3M1"/>
+                            <constraint firstItem="Ona-Ns-emI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pex-Fz-BtH"/>
+                            <constraint firstItem="Ona-Ns-emI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rDo-Sx-wm9"/>
+                            <constraint firstItem="5Z3-Vb-UEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uGO-w9-vsd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mLD-lg-lag"/>
+                    <connections>
+                        <outlet property="label" destination="5Z3-Vb-UEf" id="60k-yy-Qq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="138"/>
+        </scene>
+        <!--AwesomeViewController-->
+        <scene sceneID="5GF-UE-CVU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Common" bundleIdentifier="muffin.Common" referencedIdentifier="AwesomeViewController" id="0vM-a5-3cT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vS5-qI-8FB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiE-wX-3Ha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="76"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oDP-D2-CLV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7E2-dP-rLe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sMN-Ra-deQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QP0-hA-TCp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnh-fz-F1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons_pack" width="25" height="25"/>
+    </resources>
+</document>
